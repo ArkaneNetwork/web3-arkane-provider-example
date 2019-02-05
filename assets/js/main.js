@@ -33,11 +33,11 @@ app.addConnectEvents = () => {
   });
 
   $('#manage-eth-wallets').click(() => {
-    window.arkaneConnect.manageWallets('ETHEREUM', {redirectUri: 'http://localhost:4000', correlationID: `${Date.now()}`});
+    window.Arkane.arkaneConnect().manageWallets('ETHEREUM', {redirectUri: 'http://localhost:4000', correlationID: `${Date.now()}`});
   });
 
   $('#link-wallets').click(() => {
-    window.arkaneConnect.linkWallets({redirectUri: 'http://localhost:4000'});
+    window.Arkane.arkaneConnect().linkWallets({redirectUri: 'http://localhost:4000'});
   });
 
   $('#sign-ETHEREUM-form').click((e) => {
@@ -73,7 +73,7 @@ app.addConnectEvents = () => {
 };
 
 app.getWallets = () => {
-  window.arkaneConnect.getWallets().then((result) => {
+  window.Arkane.arkaneConnect().getWallets().then((result) => {
     app.log(result);
   })
 };
