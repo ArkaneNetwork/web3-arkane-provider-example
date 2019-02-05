@@ -117,10 +117,10 @@
     keycloak-js "4.3.0"
     querystring "^0.2.0"
 
-"@arkane-network/web3-arkane-provider@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@arkane-network/web3-arkane-provider/-/web3-arkane-provider-0.0.3.tgz#883d5d336f0d6ffbe9d7ceee610f3169ba483e23"
-  integrity sha512-uN9v7wN+r84VSQRPb/VcR9mECXhK1LZUKUrWV1hH70Djnqk4NUL/KEQjm8Z6ic9LlJJ5ZfeVq3X4YIOGfJgJoQ==
+"@arkane-network/web3-arkane-provider@0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@arkane-network/web3-arkane-provider/-/web3-arkane-provider-0.0.6.tgz#2cf9528319ed38f3d8a510317fef58a95fb0b0bd"
+  integrity sha512-N4KNU6v0onSa9wKrZQT+AgRffDkBPl3G3KMJzAfmc7LcemnUpkvt9/lQgSZpL1uxmsSRqW6N5+eotndNxr6FkA==
   dependencies:
     "@0x/subproviders" "^2.1.11"
     "@arkane-network/arkane-connect" "^1.1.5"
@@ -358,7 +358,7 @@ async-eventemitter@^0.2.2:
   dependencies:
     async "^2.4.0"
 
-"async-eventemitter@github:ahultgren/async-eventemitter#fa06e39e56786ba541c180061dbf2c0a5bbf951c":
+async-eventemitter@ahultgren/async-eventemitter#fa06e39e56786ba541c180061dbf2c0a5bbf951c:
   version "0.2.3"
   resolved "https://codeload.github.com/ahultgren/async-eventemitter/tar.gz/fa06e39e56786ba541c180061dbf2c0a5bbf951c"
   dependencies:
