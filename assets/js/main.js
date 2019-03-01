@@ -2,7 +2,11 @@ var app = app || {};
 app.auth = {};
 
 app.initApp = () => {
-  Arkane.createArkaneProviderEngine('Arketype').then(provider => {
+  Arkane.createArkaneProviderEngine({
+    clientId: 'Arketype',
+    rpcUrl: 'https://kovan.infura.io',
+    environment: 'staging'
+  }).then(provider => {
     window.web3 = new Web3(provider);
     document.body.classList.add('logged-in');
     app.addConnectEvents();
@@ -40,7 +44,7 @@ app.addConnectEvents = () => {
     window.Arkane.arkaneConnect().linkWallets({redirectUri: 'http://localhost:4000'});
   });
 
-  $('#sign-ETHEREUM-form').click((e) => {
+  $('#sign-ETHEREUM-form').submit((e) => {
     e.preventDefault();
 
     var rawTransaction = {
