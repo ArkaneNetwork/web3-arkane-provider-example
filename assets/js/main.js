@@ -5,7 +5,8 @@ app.initApp = () => {
   Arkane.createArkaneProviderEngine({
     clientId: 'Arketype',
     rpcUrl: 'https://kovan.infura.io',
-    environment: 'staging'
+    environment: 'staging',
+    signMethod: 'POPUP'
   }).then(provider => {
     window.web3 = new Web3(provider);
     document.body.classList.add('logged-in');
